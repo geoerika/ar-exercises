@@ -13,7 +13,7 @@ puts "----------"
 
 print "Which store do you go shopping to? "
 @store_name = gets.chomp
-@store7 = Store.create!(name: "#{@store_name}")
+@store7 = Store.create(name: "#{@store_name}")
 @store7.save
 
 @store7.errors.full_messages.each do |message|
