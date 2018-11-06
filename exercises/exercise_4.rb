@@ -16,7 +16,7 @@ store5.save
 
 @men_stores = Store.where(mens_apparel: true).order(id: :asc)
 @men_stores.each do |store|
-  puts store.name
+  puts "Store name: #{store.name}, annual revenue:  #{store.annual_revenue}"
 end
 
 
